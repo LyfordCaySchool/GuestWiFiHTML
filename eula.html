@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width"/>  
+	<title>Welcome to NET.3</title>
+	<link rel=StyleSheet href="portal.css" type="text/css" >
+	
+	<script>
+		function cancel() {
+			document.write(""); 
+			window.opener = self; 
+			window.close();  
+		}
+	</script>
+	
+</head>
+<body>
+
+<div style="height:600px;">
+	<form action="reg.php" method="post" name="form2">
+	<div id="logo">
+	<img src="LyfordCay_MainLogo_4c.png" width="214" height="125">
+	</div>
+	<h1>Welcome to the NET.3 Conference</h1>
+	<table>
+		<tr>
+			<td>
+				<div class="error" id="sipDeny">
+					
+	            </div>
+	            <div class="error" id="addi_msg">
+	            </div>
+	            <div id="normal">
+	                 <table>
+	                 	<tr>
+							<td>
+						  		<div id="reason" class="error"/>
+						  	</td>
+						</tr>
+						<tr>
+						  	<td>
+								<div id="replymsg" class="error"/>
+						  	</td>
+						</tr>
+						<tr>
+						  	<td>
+								<div id="redir" class="error"/>
+						  	</td>
+						</tr>
+	                 </table>
+	            </div>
+			</td>
+		</tr>
+	</table>
+<p>We're happy to have you here today, and hope that you learn and interact with your fellow educators in ways that will benefit your students. </p>
+<p>Please use the WiFi network responsibly. Since we have may attendees, please do not: </p>
+<ul>
+	<li>Stream movies or music</li>
+	<li>Download large files</li>
+	<li>Run peer-to-peer sharing software</li>
+</ul>
+<p>If you choose to continue, you are agreeing to comply with and be bound by the following terms and conditions of use. If you disagree with any part of these terms and conditions, you may not continue.  Terms of use:
+<ol id="aup">
+	<li>Your use of any information or materials on sites you access is entirely at your own risk, for which we shall not be liable.</li>
+	<li>You agree that, though this portal, you will not perform any of the following acts:  
+		<ul>
+			<li>Attempt to access devices or resources to which you have no explicit, legitimate rights</li>
+			<li>Copy, reproduce, or transmit any copyrighted files or information other than in accordance with the requirements and allowances of the copyright holder</li>
+			<li>Launch network attacks of any kind including port scans, DoS/DDoS, packet floods, replays or injections, session hijacking or interception, or other such activity with malicious intent</li>
+			<li>Transmit malicious software such as viruses, Trojan horses, and worms</li>
+			<li>Surreptitiously install software or make configuration changes to any device or application, by means of the installation or execution of key loggers, registry keys,  or other executable or active application or script</li>
+		</ul>
+	</li>
+	<li>You agree that you will use the access provided here responsibly and with full regard to the safety, security, and privacy of all other users, devices, and resources.</li>
+	<li>You agree that you will be mindful of the cultural sensitivities of others while using this portal so as not to provoke reaction or offense, and that you will not intentionally access pornographic, graphically violent, hateful, or other offensive material (as deemed by us) regardless of others&#180; sensitivities.</li>
+	<li>You understand that we reserve the right to log or monitor traffic to ensure that these terms are being followed.</li>
+	<li>You understand that unauthorized use of resources through this portal may give rise to a claim for damages and/or be a criminal offense.</li>
+</ol>
+<input name="checkbox" type="hidden" id="checkbox" value="checkbox" />
+<div id="accept_div">
+<input class="submitbutton" name="Submit" value="Accept" type="submit" /><input lass="submitbutton" name="Cancel" value="Cancel" type="button" onclick="cancel();" />
+</div>
+	</form>
+	
+</div>
+</body>
+</html>

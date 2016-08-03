@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width"/>  
+	<title>Login</title>
+	
+	<script src="hm.cwp.util.js"></script>
+	
+	<script>
+		if(document.addEventListener){
+			window.addEventListener('load',addPlaceHolders,false);
+		}else{
+			window.attachEvent('onload',addPlaceHolders);
+		} 
+    </script>
+	
+	<style type="text/css">
+	<!--
+	body{
+		background-color:#000000;
+		background-image: url(default_hive.png);
+		background-repeat: no-repeat;
+		background-attachment:fixed;
+		background-position: center;
+		font-family:Helvetica, Arial, sans-serif;
+		text-align:left;
+		width:400px;
+		margin:0 auto;
+		font-size:14px;
+		color: #FFFFFF;
+		padding:0 20px;
+	}
+	
+	a{
+		color: #FFFFFF;
+	}
+	
+	a:hover{
+		color: #FFFFFF;
+	}
+	
+	p{
+		text-align:left;
+		font-size:14px;
+	}
+	
+	.note{
+		width:200px;
+		font-size:12px;
+		line-height:14px;
+		color: #FFFFFF;
+	}
+	
+	h1{
+		font-family:Century Gothic, Helvetica, Arial, sans-serif;
+		font-size:30px;
+		text-align:center;
+		font-weight:300;
+	}
+	
+	h2{
+		color: #FFFFFF;
+		line-height:14px;
+	}
+	
+	h3{
+		font-family:Century Gothic, Helvetica, Arial, sans-serif;
+		color: #FFFFFF;
+		text-align:center;
+		font-size:24px;
+		font-weight:300;
+		margin-bottom:40px;
+	}
+		
+	
+	.req:after{
+		color: #FFFFFF;
+		font-size:16px;
+		content:"*";
+	}
+	
+	.login{
+		width:380px;
+		text-align:center;
+		margin:0px auto 60px;
+	}
+	
+	.login input{
+		font-size:25px;
+		margin-bottom:10px;
+		width:300px;
+		color: gray;
+	}
+	
+	.login_button{
+		float:right;
+		background: url(login.png) no-repeat;
+	    width: 125px;
+		height: 40px;
+	    border: 0px;
+		margin-top:10px;
+		cursor:pointer;
+	
+	}
+	
+	.register{
+		width: 388px;
+		text-align:center;
+		margin-top:30px;
+		margin:0 auto;
+	}
+	
+	.register input{
+		font-size:20px;
+		margin-bottom:5px;
+		width:275px;
+		color: gray;
+	}
+	
+	.reg_button{
+		float:right;
+		background: url(register.png) no-repeat 0px 5px;
+		margin-top:5px;
+	    width: 125px;
+		height: 45px;
+	    border: 0px;
+		cursor:pointer;
+	}
+	
+	.error{
+		color: #FFFFFF;
+		text-shadow: 0 0 3px #000;
+		text-align:center;
+	}
+	-->
+	
+	/* added by lidan */
+	span.placeholder {
+		color:#808080;
+		position:absolute;
+		padding:3px;
+		font-size:25px;
+	}
+	
+	td.noteError {
+		font-weight: bold;
+		color: #FF0000;
+		padding-left:30px;
+		padding-bottom:5px;
+	}
+	</style>
+</head>
+<body>
+<div style="height:500px;">
+	<div style="height:200px;"></div>
+	<h1 id="h1Title">Secure Internet Portal</h1>
+	<h2>Registration</h2>
+	<p><strong>Register to access the network.</strong></p>
+	
+	<form class="register" name="form1" action="reg.php" method="post" onsubmit="return validateSubmit(this);">
+	<!-- registrationFields -->
+<table>
+<tr><td><input type="text" maxlength="32" name="field1" id="field1" placeholder="First Name*" required/><br /></td></tr>
+<tr><td><input type="text" maxlength="32" name="field2" id="field2" placeholder="Last Name*" required/><br /></td></tr>
+<tr><td><input type="email" maxlength="32" name="field3" id="field3" placeholder="Email*" required/><br /></td></tr>
+<tr><td><input type="tel" maxlength="32" name="opt_field1" id="opt_field1" placeholder="Phone" /><br /></td></tr>
+<tr><td><input type="text" maxlength="32" name="field4" id="field4" placeholder="Visiting*" required/><br /></td></tr>
+<tr><td><input type="text" maxlength="32" name="opt_field2" id="opt_field2" placeholder="Comment" /><br /></td></tr>
+</table>
+    
+    <div>
+		<input style="width:140px;" type="submit" value=" " class="reg_button"/>
+		<p class="note">It may take a moment for registration to complete (* required).</p>
+		<input name="checkbox" type="hidden" id="checkbox" value="checkbox" />
+    </div>
+	</form>
+	<p style="float:right;"><img id="footImage" src="company_logo.png" alt="Powered By Aerohive Networks" style="width: 235px; height: 69px;"/></p>
+</div>
+</body>
+</html>
